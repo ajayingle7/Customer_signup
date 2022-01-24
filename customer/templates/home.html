@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/mycss.css' %}">
+</head>
+<body bgcolor="#5cf7be">
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/mycss.css' %}">
+</head>
+<body>
+
+
+<form method="post">
+    {% csrf_token %}
+
+
+
+    <div class="container">
+          <center>  <h1> Flipkart Signup</h1> </center><br>
+
+        <label for="fn"><b>First Name:</b></label>
+        <input type="text" placeholder="First Name" name="fn" required >
+        <br>
+        <label for="ln" ><b>Last Name:</b></label>
+        <input type="text" name="ln" placeholder="Last Name">
+        <br>
+        <label for="email"><b>Email:</b></label>
+        <input type="text" name="email" placeholder="Email">
+        <br>
+
+         <label for="state"><b>State:</b></label>
+        <input type="text" name="state" placeholder="Maharashtra" readonly>
+        <br>
+
+         <label for="city"><b>City:</b></label>
+        <input type="text" name="city" placeholder="City">
+
+
+         <label for="pincode" ><b>Pincode:</b></label>
+        <input type="text" name="pincode" placeholder="Pincode">
+        <br>
+
+
+
+        <label for="mno"><b>Mobile Number:</b></label>
+        <input type="text" name="mno" placeholder="Mobile Number">
+        <br>
+
+        <label for="pass"><b>Password:</b></label>
+        <input type="password" name="pass" placeholder="Password  e.g (Ajay@123)" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="please enter  6 or more charachter">
+        <br>
+
+
+
+        <center><button type="submit" class="registerbtn">Register</button>
+            <button type="reset" class="resetbtn">Reset</button>
+        </center>
+
+
+
+
+    </div>
+
+</form>
+</body>
+</html>
+
+
+
+
+</body>
+</html>
